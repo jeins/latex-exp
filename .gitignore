@@ -1,5 +1,8 @@
 *.aux
 *.log
+*.lof
+*.lot
 *.out
 *.gz
-*.pdf
+*.toc
+img/*.db

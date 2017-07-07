@@ -1,0 +1,39 @@
+%
+% Wissenschaftliches Arbeiten mit LaTeX
+%
+% @author Muhammad Juan Akbar
+% @version 1.0
+% 
+
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage{main_conf}
+
+% ============= Dokumentbeginn =============
+\begin{document}
+%Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
+\pagestyle{empty}
+
+\include{01_cover}
+
+% Beendet eine Seite und erzwingt auf den nachfolgenden Seiten die Ausgabe aller Gleitobjekte (z.B. Abbildungen), die bislang definiert, aber noch nicht ausgegeben wurden. Dieser Befehl fügt, falls nötig, eine leere Seite ein, sodaß die nächste Seite nach den Gleitobjekten eine ungerade Seitennummer hat. 
+\cleardoubleoddpage
+
+% pagestyle für gesamtes Dokument aktivieren
+\pagestyle{fancy}
+
+%Inhaltsverzeichnis
+\tableofcontents
+
+%Verzeichnis aller Bilder
+\listoffigures
+
+%Verzeichnis aller Tabellen
+\listoftables
+
+\include{02_kapitel_1}
+
+%Literaturverzeichnis
+\bibliographystyle{unsrtdin}
+\bibliography{Literatur}
+
+\end{document}
