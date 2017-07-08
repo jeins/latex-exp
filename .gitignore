@@ -1,8 +1,8 @@
-*.aux
-*.log
-*.lof
-*.lot
-*.out
-*.gz
-*.toc
-img/*.db
+# Ignore everything in this directory
+*
+# Except this file
+!img/
+!*.tex
+!*.sty
+!*.pdf
+!.gitignore
